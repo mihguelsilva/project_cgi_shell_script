@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="autho" content="Mihguel Da Silva Santos Tavares De Araujo">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+    <style>
+      /*Tela grande de notebook*/
+      * {
+	  padding: 0px;
+	  margin: 0px;
+      }
+      @media (min-width: 1200px) and (max-width: 1500px) {
+	  body {
+	      background-color:lightgreen;
+	  }
+	  header {
+	      height: 100px;
+	      background-color: rgba(255,255,255,.1);
+	  }
+	  main {
+	      position: relative;
+	      height: 400px;
+	      background-color: rgba(1,1,1,.1);
+	  }
+	  section#table {
+	      width: 60%;
+	      background-color: rgba(255,255,255,.1);
+	      height: 300px;
+	      position: absolute;
+	      left: 50%;
+	      top: 50%;
+	      transform: translate(-50%, -50%);
+	      padding: 2%;
+		  border-radius:50px;
+	  }
+	  table {
+	      width: 80%;
+		  margin: auto;
+	  }
+	  table td, table th {
+	      padding: 2%;
+	  }
+	  table th h1 {
+		font-size: 20pt;
+	  }
+	  input.input_login {
+	      width: 100%;
+	      height: 35px;
+	      font-size: 13pt;
+	      font-family: sans-serif;
+		  border: none;
+		  outline: none;
+		  background: none;
+		  border-bottom: 1px solid rgba(1,1,1,.4);
+	  }
+	  input.input_login[type="submit"] {
+		width: 50%;
+		display: block;
+		margin: auto;
+		cursor: pointer;
+		border: none;
+		background-color: rgba(255,255,255,.3);
+	  }
+	  input.input_login[type="submit"]:hover {
+		background-color: rgba(1,1,1,.3);
+		transition: .5s;
+	  }
+	  span {
+		font-size: 15pt;
+	  }
+      }
+      /*Tela grande de PC*/
+      /*Tela de TV*/
+    </style>
+  </head>
+  <body>
+    <header>
+      <section id="left">
+      </section>
+      <section id="center">
+      </section>
+      <section id="right">
+      </section>
+    </header>
+    <main>
+      <section id="table">
+	<table>
+	  <thead>
+	    <tr>
+	      <th colspan="2"><h1>Login</h1></th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td><span class="glyphicon glyphicon-user"></span></td>
+	      <td><input type="text" name="httpd_username" id="username" class="input_login"></td>
+	    </tr>
+	    <tr>
+	      <td><i class="fa fa-key fa-2x" aria-hidden="true"></i></td>
+	      <td><input type="password" name="httpd_password" id="password" class="input_login"></td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td><input type="submit" name="submit" id="id_submit" class="input_login" value="Enviar"></td>
+	    </tr>
+	  </tbody>
+	  <tfooter>
+	  </tfooter>
+	</table>
+      </section>
+    </main>
+    <footer>
+    </footer>
+    <script>
+    </script>
+  </body>
+</html>
